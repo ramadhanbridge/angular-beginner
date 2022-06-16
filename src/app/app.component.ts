@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'starterCode';
+  handlevent() {
+    this.title = "text cliked"
+  }
+
+  show = false;
 }
