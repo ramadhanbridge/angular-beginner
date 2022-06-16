@@ -2,10 +2,18 @@
   <h1 (click)="handlevent()">{{ title | uppercase }}</h1>
 </ng-container>
 <input type="text" [(ngModel)]='title'>
+<input type="text" [formControl]="testProps" >
+{{ testProps.value }}
 <app-user></app-user>
 <a routerLink="/first">First</a>
 <a routerLink="/second">Second</a>
 <a routerLink="/third">Third</a>
 <a routerLink="/fourth">Fourth</a>
-
+<mat-slider min="1" max="100" step="1" value="50"></mat-slider>
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>1</mat-grid-tile>
+  <mat-grid-tile>2</mat-grid-tile>
+  <mat-grid-tile>3</mat-grid-tile>
+  <mat-grid-tile>4</mat-grid-tile>
+</mat-grid-list>
 <router-outlet></router-outlet>
