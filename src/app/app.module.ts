@@ -6,11 +6,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StorageService } from './storage.service';
 import { UserComponent } from './user/user.component';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
+import { ThirdComponent } from './third/third.component';
+import { FourthComponent } from './fourth/fourth.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
+    UserComponent,
+    FirstComponent,
+    SecondComponent,
+    ThirdComponent,
+    FourthComponent
   ],
   imports: [
     BrowserModule,
